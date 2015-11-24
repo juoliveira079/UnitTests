@@ -5,13 +5,13 @@ using System.Web;
 
 namespace Client.Models
 {
-    public class Conta
+    public class ContaCorrente
     {
         public int numero { get; set; }
         public double saldo { get; protected set; }
         public Cliente titular { get; set; }
-        
 
+       
         public void Saque(double valor)
         {
             
@@ -31,6 +31,11 @@ namespace Client.Models
         public void colocaNumero(int numero)
         {
             this.numero = numero;
+        }
+
+        public double CalculaTributo()
+        {
+            return this.saldo * 0.02;
         }
     }
 }

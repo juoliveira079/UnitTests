@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Client.Models;
 using NSubstitute;
+using Client;
 
 namespace TestUnitNsubstitute
 {
@@ -10,19 +11,18 @@ namespace TestUnitNsubstitute
     {
      
         [TestMethod]
-        public void Total_Contas_Nsubstitute()
+        public void Acumulo_Conta_Nsubstitute()
         {
             //Arrange
-            var conta = Substitute.For<Conta>();
+            var tributo = Substitute.For<Itributavel>();
             var totalizador = Substitute.For<TotalizadorConta>();
 
             //Act
-            double total = totalizador.ValorTotal + conta.saldo;
-            totalizador.Soma(conta);
+            double total = totalizador.Total + tributo.CalculaTributo();
+            totalizador.Acumula(tributo);
 
             //Assert
-
-            Assert.AreEqual(totalizador.ValorTotal, total);
+            Assert.AreEqual(totalizador.Total, total);
         }
     }
 }

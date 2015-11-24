@@ -14,7 +14,7 @@ namespace UnitTest
             //Arrange
 
             Fixture fixture = new Fixture();
-            Conta conta = fixture.Create<Conta>();
+            ContaCorrente conta = fixture.Create<ContaCorrente>();
 
             // Act
             double result = conta.GetSaldo();
@@ -28,7 +28,7 @@ namespace UnitTest
         {
             //Arrange
             Fixture fixture = new Fixture();
-            Conta conta = fixture.Create<Conta>();
+            ContaCorrente conta = fixture.Create<ContaCorrente>();
             double valor = 100;
            
             //Act
@@ -47,7 +47,7 @@ namespace UnitTest
         {
             //Arrange
             Fixture fixture = new Fixture();
-            Conta conta = fixture.Create<Conta>();
+            ContaCorrente conta = fixture.Create<ContaCorrente>();
             double valor = 100;
            
             //Act
@@ -64,7 +64,7 @@ namespace UnitTest
         {
             //Arrange
             Fixture fixture = new Fixture();
-            Conta   conta   = fixture.Create<Conta>();
+            ContaCorrente   conta   = fixture.Create<ContaCorrente>();
             int     numero  = fixture.Create<int>();
 
             //Act

@@ -121,6 +121,5 @@ C:\Users\juliana.oliveira\Documents\UnitTests\Client\Client\bin\Microsoft.Owin.S
 C:\Users\juliana.oliveira\Documents\UnitTests\Client\Client\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\juliana.oliveira\Documents\UnitTests\Client\Client\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\juliana.oliveira\Documents\UnitTests\Client\Client\bin\System.Web.Http.Owin.xml
-C:\Users\juliana.oliveira\Documents\UnitTests\Client\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
 C:\Users\juliana.oliveira\Documents\UnitTests\Client\Client\obj\Debug\Client.dll
 C:\Users\juliana.oliveira\Documents\UnitTests\Client\Client\obj\Debug\Client.pdb

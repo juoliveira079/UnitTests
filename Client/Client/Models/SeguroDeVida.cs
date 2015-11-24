@@ -5,11 +5,11 @@ using System.Web;
 
 namespace Client.Models
 {
-    public class ContaInvestimento : ContaCorrente, Itributavel
+    public class SeguroDeVida:ContaCorrente,Itributavel
     {
         public double CalculaTributo()
         {
-            return this.saldo * 0.03;
+            return this.saldo * 0.02;
         }
     }
 }

@@ -7,11 +7,11 @@ namespace Client.Models
 {
     public class TotalizadorConta
     {
-        public double ValorTotal { get; private set; }
+        public double Total { get; private set; }
 
-        public void Soma(Conta conta)
+        public void Acumula(Itributavel t)
         {
-            ValorTotal += conta.saldo;
+            Total += t.CalculaTributo();
         }
     }
 }
