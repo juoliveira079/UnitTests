@@ -10,7 +10,17 @@ namespace Client.Models
         public int numero { get; set; }
         public double saldo { get; protected set; }
         public Cliente titular { get; set; }
+        public static  int totalDeContas = 0;
 
+        public ContaCorrente()
+        {
+            ContaCorrente.totalDeContas++;
+        }
+
+        public static int ProximaConta()
+        {
+            return ContaCorrente.totalDeContas + 1;
+        }
        
         public void Saque(double valor)
         {

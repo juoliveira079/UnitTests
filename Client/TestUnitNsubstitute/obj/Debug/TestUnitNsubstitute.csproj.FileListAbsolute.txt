@@ -98,3 +98,4 @@ C:\Users\juliana.oliveira\Documents\UnitTests\Client\TestUnitNsubstitute\bin\Deb
 C:\Users\juliana.oliveira\Documents\UnitTests\Client\TestUnitNsubstitute\obj\Debug\TestUnitNsubstitute.csprojResolveAssemblyReference.cache
 C:\Users\juliana.oliveira\Documents\UnitTests\Client\TestUnitNsubstitute\obj\Debug\TestUnitNsubstitute.dll
 C:\Users\juliana.oliveira\Documents\UnitTests\Client\TestUnitNsubstitute\obj\Debug\TestUnitNsubstitute.pdb
+C:\Users\juliana.oliveira\Documents\UnitTests\Client\TestUnitNsubstitute\bin\Debug\TestUnitNsubstitute.dll.config
