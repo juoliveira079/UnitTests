@@ -211,6 +211,8 @@
     <Compile Include="Models\ContaCorrente.cs" />
     <Compile Include="Models\ContaInvestimento.cs" />
     <Compile Include="Models\ContaPoupanca.cs" />
+    <Compile Include="Models\Fundo.cs" />
+    <Compile Include="Models\Gerente.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\SeguroDeVida.cs" />
     <Compile Include="Models\TotalizadorConta.cs" />

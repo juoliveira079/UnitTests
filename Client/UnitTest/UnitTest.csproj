@@ -62,11 +62,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TestConta.cs" />
+    <Compile Include="TestContaCorrente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestContaPoupanca.cs" />
     <Compile Include="TestSeguroVida.cs" />
     <Compile Include="TestContaInvestimento.cs" />
+    <Compile Include="TesteCliente.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

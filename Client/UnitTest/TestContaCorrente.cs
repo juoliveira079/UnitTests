@@ -6,13 +6,12 @@ using Client.Models;
 namespace UnitTest
 {
     [TestClass]
-    public class TestConta
+    public class TestContaCorrente
     {
         [TestMethod]
-        public void Conta_Saldo()
+        public void Teste_Conta_Saldo()
         {
             //Arrange
-
             Fixture fixture = new Fixture();
             ContaCorrente conta = fixture.Create<ContaCorrente>();
 
@@ -24,7 +23,7 @@ namespace UnitTest
         }
         
         [TestMethod]
-        public void Conta_Saque_Valor_Maior_Saldo()
+        public void Teste_Conta_Saque_Valor_Maior_Saldo()
         {
             //Arrange
             Fixture fixture = new Fixture();
@@ -42,7 +41,7 @@ namespace UnitTest
 
         }
         [TestMethod]
-        public void Conta_Saque_Valor_Menor_Saldo()
+        public void Teste_Conta_Saque_Valor_Menor_Saldo()
         {
             //Arrange
             Fixture fixture = new Fixture();
@@ -60,7 +59,7 @@ namespace UnitTest
         }
 
         [TestMethod]
-        public void Conta_Deposito()
+        public void Teste_Conta_Deposito()
         {
             //Arrange
             Fixture fixture = new Fixture();
@@ -71,18 +70,17 @@ namespace UnitTest
             double deposito = conta.saldo + valor;
             conta.Deposito(valor);
 
-
             //Assert
             Assert.AreEqual(conta.saldo, deposito);
         }
 
         [TestMethod]
-        public void Conta_Numero()
+        public void Teste_Conta_Numero()
         {
             //Arrange
             Fixture fixture = new Fixture();
             ContaCorrente   conta   = fixture.Create<ContaCorrente>();
-            int     numero  = fixture.Create<int>();
+            int  numero  = fixture.Create<int>();
 
             //Act
             conta.colocaNumero(numero);
@@ -93,10 +91,16 @@ namespace UnitTest
         }
 
         [TestMethod]
-        public void Conta_Proxima()
+        public void Teste_Conta_Proxima()
         {
             //Arrange
+            Fixture fixture = new Fixture();
 
+            //Act
+            int result = ContaCorrente.ProximaConta();
+
+            //Assert
+           Assert.AreEqual(ContaCorrente.totalDeContas + 1, result);
         }
     }
 }

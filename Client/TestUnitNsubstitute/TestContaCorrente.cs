@@ -9,7 +9,7 @@ namespace TestUnitNsubstitute
     public class TestContaCorrente
     {
          [TestMethod]
-        public void Conta_Corrente_GetSaldo_Nsubstitute()
+        public void Teste_Conta_Corrente_GetSaldo_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaCorrente>();
@@ -22,7 +22,7 @@ namespace TestUnitNsubstitute
         }
 
         [TestMethod]
-        public void Conta_Corrente_Deposito_Nsubstitute()
+         public void Teste_Conta_Corrente_Deposito_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaCorrente>();
@@ -38,7 +38,7 @@ namespace TestUnitNsubstitute
         }
 
         [TestMethod]
-        public void Conta_Corrente_Saque_Nsubstitute()
+        public void Teste_Conta_Corrente_Saque_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaCorrente>();
@@ -54,7 +54,7 @@ namespace TestUnitNsubstitute
         }
 
         [TestMethod]
-        public void Conta_Corrente_Numero_Nsubstitute()
+        public void Teste_Conta_Corrente_Numero_Nsubstitute()
         {
             //Arrange 
             var conta = Substitute.For<ContaCorrente>();
@@ -65,6 +65,19 @@ namespace TestUnitNsubstitute
             //Assert
             Assert.AreEqual(conta.numero, num);
 
+        }
+
+        [TestMethod]
+        public void Teste_Conta_Corrente_Proxima()
+        {
+            //Arrange
+            var conta = Substitute.For<ContaCorrente>();
+
+            //Act
+            int result = ContaCorrente.ProximaConta();
+
+            //Assert
+            Assert.AreEqual(ContaCorrente.totalDeContas + 1, result);
         }
     }
 }

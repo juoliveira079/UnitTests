@@ -103,5 +103,12 @@ namespace UnitTest
             //Assert
             Assert.AreEqual(conta.numero, numero);
         }
+        [TestMethod]
+        public void Teste_Conta_Investimento_Proxima_Conta()
+        {
+            //Arrange
+            Fixture fixture = new Fixture();
+            ContaInvestimento conta = fixture.Create<ContaInvestimento>();
+        }
     }
 }

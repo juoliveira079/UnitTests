@@ -9,7 +9,7 @@ namespace TestUnitNsubstitute
     public class TestContaInvestimento
     {
         [TestMethod]
-        public void Conta_Investimento_GetSaldo_Nsubstitute()
+        public void Teste_Conta_Investimento_GetSaldo_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaInvestimento>();
@@ -22,7 +22,7 @@ namespace TestUnitNsubstitute
         }
 
         [TestMethod]
-        public void Conta_Investimento_Deposito_Nsubstitute()
+        public void Teste_Conta_Investimento_Deposito_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaInvestimento>();
@@ -38,7 +38,7 @@ namespace TestUnitNsubstitute
         }
 
         [TestMethod]
-        public void Conta_Investimento_Saque_Maior_Saldo_Nsubstitute()
+        public void Teste_Conta_Investimento_Saque_Maior_Saldo_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaInvestimento>();
@@ -54,7 +54,7 @@ namespace TestUnitNsubstitute
         }
 
        [TestMethod]
-        public void Conta_Investimento_Saque_Menor_Saldo_Nsubstitute()
+        public void Teste_Conta_Investimento_Saque_Menor_Saldo_Nsubstitute()
         {
            //Arrange
             var conta = Substitute.For<ContaInvestimento>();
@@ -70,7 +70,7 @@ namespace TestUnitNsubstitute
         }
 
         [TestMethod]
-        public void Conta_Investimento_Numero_Nsubstitute()
+       public void Teste_Conta_Investimento_Numero_Nsubstitute()
         {
             //Arrange 
             var conta = Substitute.For<ContaInvestimento>();

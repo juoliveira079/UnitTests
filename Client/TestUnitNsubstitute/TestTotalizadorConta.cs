@@ -11,7 +11,7 @@ namespace TestUnitNsubstitute
     {
      
         [TestMethod]
-        public void Acumulo_Conta_Nsubstitute()
+        public void Teste_Acumulo_Conta_Nsubstitute()
         {
             //Arrange
             var tributo = Substitute.For<Itributavel>();

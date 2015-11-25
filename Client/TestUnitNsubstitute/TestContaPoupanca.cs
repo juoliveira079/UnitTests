@@ -10,7 +10,7 @@ namespace TestUnitNsubstitute
     {
 
         [TestMethod]
-        public void Conta_Poupanca_Saldo_Nsubstitute()
+        public void Teste_Conta_Poupanca_Saldo_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaPoupanca>();
@@ -23,7 +23,7 @@ namespace TestUnitNsubstitute
         }
 
          [TestMethod]
-        public void Conta_Poupanca_Deposito_Nsubstitute()
+        public void Teste_Conta_Poupanca_Deposito_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaPoupanca>();
@@ -39,7 +39,7 @@ namespace TestUnitNsubstitute
 
         }
         [TestMethod]
-         public void Conta_Poupanca_Saque_Maior_Saldo_Nsubstitute()
+         public void Teste_Conta_Poupanca_Saque_Maior_Saldo_Nsubstitute()
          {
              //Arrange
              var conta = Substitute.For<ContaPoupanca>();
@@ -55,7 +55,7 @@ namespace TestUnitNsubstitute
       
 
         [TestMethod]
-        public void Conta_Poupanca_CalculaTributo_Nsubstitute()
+        public void Teste_Conta_Poupanca_CalculaTributo_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaPoupanca>();
@@ -66,7 +66,7 @@ namespace TestUnitNsubstitute
         }
 
         [TestMethod]
-        public void Conta_Poupanca_Coloca_Numero_Nsubstitute()
+        public void Teste_Conta_Poupanca_Coloca_Numero_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaPoupanca>();
