@@ -38,17 +38,33 @@ namespace TestUnitNsubstitute
         }
 
         [TestMethod]
-        public void Conta_Investimento_Saque_Nsubstitute()
+        public void Conta_Investimento_Saque_Maior_Saldo_Nsubstitute()
         {
             //Arrange
             var conta = Substitute.For<ContaInvestimento>();
             double valor = 1000;
 
             //Act
-            double saque = conta.saldo - valor;
+            double saque = conta.saldo - (valor + 0.10);
             conta.Saque(valor);
 
             //Assert
+            Assert.AreEqual(conta.saldo, saque);
+
+        }
+
+       [TestMethod]
+        public void Conta_Investimento_Saque_Menor_Saldo_Nsubstitute()
+        {
+           //Arrange
+            var conta = Substitute.For<ContaInvestimento>();
+            double valor = -0.1;
+
+           //Act
+            double saque = conta.saldo - valor;
+            conta.Saque(valor);
+
+           //Assert
             Assert.AreEqual(conta.saldo, saque);
 
         }

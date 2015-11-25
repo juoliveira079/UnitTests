@@ -45,7 +45,7 @@ namespace TestUnitNsubstitute
             double valor = 1000;
 
             //Act
-            double saque = conta.saldo - valor;
+            double saque = conta.saldo - (valor + 0.10);
             conta.Saque(valor);
 
             //Assert

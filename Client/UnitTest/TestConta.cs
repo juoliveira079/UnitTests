@@ -24,7 +24,7 @@ namespace UnitTest
         }
         
         [TestMethod]
-        public void Conta_Saque()
+        public void Conta_Saque_Valor_Maior_Saldo()
         {
             //Arrange
             Fixture fixture = new Fixture();
@@ -32,14 +32,31 @@ namespace UnitTest
             double valor = 100;
            
             //Act
-            
-            double saque = conta.saldo - valor;
+
+            double saque = conta.saldo - (valor + 0.10);
             conta.Saque(valor);
            
             //Assert
 
             Assert.AreEqual(conta.saldo, saque);
 
+        }
+        [TestMethod]
+        public void Conta_Saque_Valor_Menor_Saldo()
+        {
+            //Arrange
+            Fixture fixture = new Fixture();
+            ContaCorrente conta = fixture.Create<ContaCorrente>();
+            double valor = -0.1;
+
+            //Act
+
+            double saque = conta.saldo - valor;
+            conta.Saque(valor);
+
+            //Assert
+
+            Assert.AreEqual(conta.saldo, saque);
         }
 
         [TestMethod]
@@ -72,6 +89,13 @@ namespace UnitTest
 
             //Assert
             Assert.AreEqual(conta.numero, numero);
+
+        }
+
+        [TestMethod]
+        public void Conta_Proxima()
+        {
+            //Arrange
 
         }
     }

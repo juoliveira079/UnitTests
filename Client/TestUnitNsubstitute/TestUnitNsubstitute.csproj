@@ -61,6 +61,7 @@
     <Compile Include="TestContaInvestimento.cs" />
     <Compile Include="TestTotalizadorConta.cs" />
     <Compile Include="TestContaCorrente.cs" />
+    <Compile Include="TestSeguroVida.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

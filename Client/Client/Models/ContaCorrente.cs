@@ -24,9 +24,15 @@ namespace Client.Models
        
         public void Saque(double valor)
         {
-            
-           this.saldo -= valor;
-
+            if (valor + 0.10 > this.saldo)
+            {
+                this.saldo -= valor + 0.10;
+            }
+            else
+            {
+                this.saldo -= valor;
+            }
+               
         }
         public void Deposito( double valor)
         {
